@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+    padding: 30px;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--Light-grayish-blue);
+}
+
+.main-card {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+main .item-1{
+    background-color: var(--Moderate-violet);
+    position: relative;
+}
+
+main .item-1 .main-card--testimony {
+    position: relative;
+    z-index: 10;
+}
+
+.item-1--background-img{
+    background-image: url('../assets/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 99px;
+    position: absolute;
+    left: 190px; 
+    top: 0px
+}
+
+main .item-2 {
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+body main .item-3,
+body main .item-5 {
+    background-color: white;
+}
+
+main .item-4 {
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.main-card--info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.main-card--user-info--img img{
+    border-radius: 30px;
+    width: 30px;
+    border: 2px solid hsla(210, 46%, 95%, 0.5);
+}
+
+.main-card--user-data--name{
+    font-size: 1.3rem;
+    color: var(--Light-grayish-blue);
+    font-weight: 600;
+}
+
+.main-card--user-data--check {
+    font-size: 1.1rem;
+    color:hsla(210, 46%, 95%, 0.5);
+}
+
+.main-card--testimony {
+    margin-top: 15px;
+}
+
+.main-card--testimony h2 {
+    color: var(--Light-grayish-blue);
+    font-size: 1.95rem;
+}
+
+.main-card--testimony p{
+    color: hsla(210, 46%, 95%, 0.5);
+    font-size: 1.35rem;
+    margin-top: 15px;
+}
+
+ .item-3 .main-card--user-data .main-card--user-data--name,
+ .item-5 .main-card--user-data .main-card--user-data--name {
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 600;
+}
+
+.item-3 .main-card--user-data .main-card--user-data--check,
+.item-5 .main-card--user-data .main-card--user-data--check {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.item-3 .main-card--testimony h2,
+.item-5 .main-card--testimony h2{
+    color: var(--Very-dark-grayish-blue);
+    font-size: 1.93rem;
+}
+
+.item-3 .main-card--testimony p,
+.item-5 .main-card--testimony p{
+    color: hsla(217, 19%, 35%, 0.7);
+    font-size: 1.35rem;
+}
