@@ -14,13 +14,18 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+body {
+    background-color: var(--Light-grayish-blue);
+}
+
 main {
     padding: 30px;
     min-width: 375px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: var(--Light-grayish-blue);
+    margin: 0 auto;
 }
 
 .main-card {
@@ -46,7 +51,7 @@ main .item-1 .main-card--testimony {
     width: 100px;
     height: 99px;
     position: absolute;
-    left: 190px; 
+    right: 25px; 
     top: 0px
 }
 
